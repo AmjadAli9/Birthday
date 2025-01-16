@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 200% 200%;
+    color: #fff;
+    animation: backgroundShift 10s infinite linear;
+    overflow-x: hidden;
+}
+@keyframes backgroundShift {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0 0; }
+}
+.container {
+    padding: 20px;
+    text-align: center;
+}
+.birthday-message h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    animation: glowText 2s infinite alternate;
+}
+
+.birthday-message p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+@keyframes glowText {
+    from { text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); }
+    to { text-shadow: 0 0 30px rgba(255, 255, 255, 1); }
+}
+
+.spotify-playlist h2 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+iframe {
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.5);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-box {
+    margin-top: 30px;
+}
+
+.section-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #00d1ff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.image-carousel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-carousel img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.6);
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.7);
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    background: rgba(0, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+}
+
+.popup .close-btn:hover {
+    background: rgba(255, 0, 150, 0.5);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.hadith-quote{
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+    text-align: left;
+    color: #eee;
+}
+.note-for-her {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+    text-align: left;
+    color: #eee;
+}
+
+
